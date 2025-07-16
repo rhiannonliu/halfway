@@ -5,6 +5,8 @@ function addInput() {
 
     const inputs = document.getElementById('localInputs');
 
+    const div = document.createElement('div');
+
     const label = document.createElement('label');
     label.textContent = `Location ${localCounter}:`;
 
@@ -13,20 +15,20 @@ function addInput() {
     const button = document.createElement('button');
     button.type = "button" /*doesn't submit the form once clicked on*/
     button.textContent = "-";
-    button.style = "background-color: rgb(92, 123, 19); color:white";
+    button.style.backgroundColor = "rgb(92, 123, 19)";
+    button.style.color = "white";
     button.onclick = function() {
         label.remove();
         inputBox.remove();
         button.remove();
         localCounter--;
     }
-
-    const br = document.createElement('br');
     
-    inputs.appendChild(label);
-    inputs.appendChild(br);
-    inputs.appendChild(br);
-    inputs.appendChild(inputBox);
-    inputs.appendChild(button);
-    inputs.appendChild(br);
+    div.appendChild(label);
+    div.appendChild(document.createElement('br'));
+    div.appendChild(inputBox);
+    div.appendChild(button);
+    div.appendChild(document.createElement('br'));
+
+    inputs.appendChild(div);
 }
