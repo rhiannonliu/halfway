@@ -12,7 +12,8 @@ function addInput() {
 
     const button = document.createElement('button');
     button.type = "button" /*doesn't submit the form once clicked on*/
-    button.textContent = "-"
+    button.textContent = "-";
+    button.style = "background-color: rgb(92, 123, 19); color:white";
     button.onclick = function() {
         label.remove();
         inputBox.remove();
@@ -25,5 +26,6 @@ function addInput() {
     inputs.appendChild(label);
     inputs.appendChild(br);
     inputs.appendChild(inputBox);
+    inputs.appendChild(button);
     inputs.appendChild(br);
 }
