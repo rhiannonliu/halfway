@@ -25,6 +25,7 @@ function addInput() {
     
     inputs.appendChild(label);
     inputs.appendChild(br);
+    inputs.appendChild(br);
     inputs.appendChild(inputBox);
     inputs.appendChild(button);
     inputs.appendChild(br);
