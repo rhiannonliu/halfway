@@ -19,7 +19,6 @@ function addLoca() {
 
     wrapper.appendChild(locaInput);
     wrapper.appendChild(button);
-    wrapper.appendChild(document.createElement('br'))
     locaInputs.appendChild(wrapper);
 }
 
